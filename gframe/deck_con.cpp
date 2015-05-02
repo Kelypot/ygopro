@@ -77,6 +77,7 @@ bool DeckBuilder::OnEvent(const irr::SEvent& event) {
 				if(mainGame->cbDBDecks->getSelected() != -1) {
 					BufferIO::CopyWStr(mainGame->cbDBDecks->getItem(mainGame->cbDBDecks->getSelected()), mainGame->gameConf.lastdeck, 64);
 				}
+				break;
 			}
 			case BUTTON_EFFECT_FILTER: {
 				mainGame->PopupElement(mainGame->wCategories);
